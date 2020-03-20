@@ -16,5 +16,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/gatsby-theme-service-relief/images`,
+      },
+    },
   ],
 }
