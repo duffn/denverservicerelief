@@ -3,8 +3,8 @@ module.exports = {
     {
       resolve: `gatsby-theme-service-relief`,
       options: {
-        authorName: `@amber1ey`,
-        authorLink: `https://twitter.com/amber1ey`,
+        authorName: `@duffn`,
+        authorLink: `https://twitter.com/duffn`,
         city: `Denver`,
         state: `Colorado`,
       },
