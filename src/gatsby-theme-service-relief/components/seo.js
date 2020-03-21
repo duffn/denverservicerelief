@@ -26,6 +26,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const seoImage = `https://denverservicerelief.com/images/denver-flag.png`
 
   return (
     <Helmet
@@ -53,7 +54,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://denverservicerelief.com/images/denver-flag.png`,
+          content: seoImage,
         },
         {
           name: `twitter:card`,
@@ -69,7 +70,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `twitter:image`,
-          content: `https://denverservicerelief.com/images/denver-flag.png`,
+          content: seoImage,
         },
         {
           name: `twitter:description`,
