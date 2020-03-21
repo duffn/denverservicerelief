@@ -1,0 +1,14 @@
+name: BuildSiteOnSchedule
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        env:
+          GATSBY_BUILD_WEBHOOK: ${{ secrets.GATSBY_BUILD_WEBHOOK }}
+        uses: wei/curl@master
+        with:
+          args: -X POST "$GATSBY_BUILD_WEBHOOK"
